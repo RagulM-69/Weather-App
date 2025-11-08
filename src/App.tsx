@@ -135,7 +135,7 @@ function AppContent() {
               onLocationClick={handleLocationClick}
               loading={loading}
               locationLoading={geoLoading}
-              error={error || geoError || undefined}
+              error={error || geoError || null}
             />
           </motion.div>
 

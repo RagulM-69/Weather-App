@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { formatDistanceToNow } from 'date-fns';
-import { FiDroplet, FiWind, FiGauge, FiThermometer } from 'react-icons/fi';
+import { FiDroplet, FiWind, FiActivity, FiThermometer } from 'react-icons/fi';
 import { WeatherData, TemperatureUnit } from '../types/weather';
 import { formatTemperature } from '../utils/temperature';
 
@@ -116,7 +116,7 @@ export function WeatherCard({ weather, unit }: WeatherCardProps) {
 
         <div className="bg-white/10 dark:bg-white/5 rounded-xl p-4 backdrop-blur-sm col-span-2 md:col-span-1">
           <div className="flex items-center gap-2 text-white/80 mb-2">
-            <FiGauge />
+            <FiActivity />
             <span className="text-sm font-medium">Pressure</span>
           </div>
           <div className="text-2xl font-bold text-white">
